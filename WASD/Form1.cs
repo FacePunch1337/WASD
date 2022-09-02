@@ -44,8 +44,29 @@ namespace WASD
                 xCoord += 50;
                 Location = new Point(xCoord, yCoord);
             }
-        }
 
-       
+            //////////////////////////////////////////
+            if (e.KeyCode == Keys.Up)
+            {
+                yCoord -= 50;
+                Location = new Point(xCoord, yCoord);
+
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                xCoord -= 50;
+                Location = new Point(xCoord, yCoord);
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                yCoord += 50;
+                Location = new Point(xCoord, yCoord);
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                xCoord += 50;
+                Location = new Point(xCoord, yCoord);
+            } 
+        }
     }
 }
